@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Snake Game">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Snake Game</title>
+        
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header>🐍Snake Game</header>
+        
+        <!-- Score board to display the score and high score-->
+        <div class="scoreBoard">
+            <div>🍎</div>
+            <div id="score">0</div>
+            <div>🏆</div>
+            <div id="highScore">0</div>
+        </div>
+
+        <!-- Game board canvas -->
+        <div class="wrapperBoard">
+            <canvas id="board"></canvas>
+        </div>
+
+        <!-- Modal to display instruction -->
+        <div class="modal" id="modalInstruction">
+            <div class="modalContent">
+                <span class="closeBtn">&times;</span>
+                <img src="images/arrowKeys.png" alt="keyboard arrow keys" width="130" height="130">
+            </div>
+        </div>
+
+        <!-- Modal to display the score at the end of the game -->
+        <div class="modal" id="modalScoreBoard">
+            <div class="modalContent">
+                <div class="modalScore">
+                    <div class="modalWrapper">
+                        <div>🍎</div>
+                        <div id="modalScore">0</div>
+                    </div>
+                    <div class="modalWrapper">
+                        <div>🏆</div>
+                        <div id="modalHighScore">0</div>
+                    </div>
+                    <button class="playBtn"> ▶ Play</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
