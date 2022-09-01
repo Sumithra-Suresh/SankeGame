@@ -18,3 +18,6 @@ Recreating the classic mobile game Snake.
 - [x] Live-reloading local dev server
 - [x] Publish code to GitHub
 - [x] Deploy app to GitHub Pages
+
+## ToDo
+- [] Avoid randomly generated food appears on the snake body
